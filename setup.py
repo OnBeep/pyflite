@@ -9,6 +9,7 @@ text2wave = Extension('_pyflite',
                       'flite_usenglish', 'flite_cmulex'],
                       sources=['_pyflite.c'])
 
-setup(name='_pyflite', version='1.0',\
-ext_modules=[text2wave])
+setup(name='_pyflite', version='1.0', ext_modules=[text2wave])
+
+setup(name='pyflite', version = '1.0', py_modules=['pyflite'])
 

@@ -5,8 +5,6 @@
 #this stuff is worth it, you can buy me a beer in return Tim Flowers
 #----------------------------------------------------------------------------
 
-
-
 from _pyflite import _PyFlite
 
 class PyFlite(_PyFlite):
