@@ -11,7 +11,7 @@ NOTE:  At this time it only installs the c libary, i'll update to install the py
 
 Usage
 =====
-
+```python
   from pyflite import PyFlite
 
   pf = PyFlite()
@@ -23,6 +23,8 @@ Usage
   pf.file2speech("filename", "VOICE NAME")
 
   pf.text2speech("YOUR TEXT GOES HERE", "VOICE NAME")
+
+```
 
 
 NOTE
