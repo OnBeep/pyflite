@@ -7,7 +7,7 @@ A simple python wrapper for the Flite TTS library.
 Install
 =======
 On linux you can run "sudo python setup.py install"
-NOTE:  At this time it only installs the c libary, i'll update to install the python wrapper later :)
+NOTE:  At this time it only installs the c libary, i'll update to install the python wrapper later
 
 Usage
 =====
@@ -29,5 +29,4 @@ Usage
 
 NOTE
 ====
-This was thrown together in a day so use at your own risk ;)
-In all seriousness I'm going to be maintaining this on a regular basis.
+This was thrown together in a day so use at your own risk 
