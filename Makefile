@@ -1,8 +1,8 @@
 # Makefile for PYFlite Python Module.
 #
-# Source:: https://github.com/onbeep/pyflite
-# Author:: Greg Albrecht <gba@orionlabs.co>
-# Copyright:: Copyright 2015 Orion Labs, Inc.
+# Source:: https://github.com/ampledata/pyflite
+# Author:: Greg Albrecht <gba@orionlabs.io>
+# Copyright:: Copyright 2017 Orion Labs, Inc.
 # License:: Apache License, Version 2.0
 #
 

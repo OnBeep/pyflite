@@ -4,15 +4,15 @@
 """
 Setup for PYFlite Python Module.
 
-Source:: https://github.com/onbeep/pyflite
+Source:: https://github.com/ampledata/pyflite
 """
 
 
 __title__ = 'pyflite'
-__version__ = '1.0.0'
-__author__ = 'Greg Albrecht <gba@orionlabs.co>'
+__version__ = '2.0.0'
+__author__ = 'Greg Albrecht <gba@orionlabs.io>'
 __license__ = 'Apache License, Version 2.0'
-__copyright__ = 'Copyright 2015 Orion Labs, Inc.'
+__copyright__ = 'Copyright 2017 Orion Labs, Inc.'
 
 
 import os
@@ -41,12 +41,12 @@ setup(
     description='Python Bindings for Flite.',
     author='Tim Flowers',
     author_email='tflowers@gmail.com',
-    maintainer='Orion',
-    maintainer_email='code@orionlabs.co',
+    maintainer='Greg Albrecht',
+    maintainer_email='gba@orionlabs.io',
     package_data={'': ['LICENSE']},
     license=open('LICENSE').read(),
     #long_description=open('README.rst').read(),
-    url='https://github.com/onbeep/pyflite',
+    url='https://github.com/ampledata/pyflite',
     package_dir={'pyflite': 'pyflite'},
     zip_safe=False,
     include_package_data=True,
