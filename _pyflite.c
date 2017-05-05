@@ -7,7 +7,9 @@
  * ----------------------------------------------------------------------------
  */
 
+
 #include "pyflite.h"
+
 
 //TODO:  Add support for default voice...
 
@@ -116,7 +118,7 @@ static int PyFlite_init(PyFlite *self)
 
   //TODO: Make this dynamic!
   voices = Py_BuildValue("[s,s,s,s,s]", "slt", "kal", "kal16", "awb", "rms");
-  
+
   tmp = self->voices;
   Py_INCREF(voices);
   self->voices = voices;
@@ -138,7 +140,7 @@ static PyObject* PyFlite_text2wave(PyObject *self, PyObject *args)
     return NULL;
 
   sts = text_to_wave(text, wave, voice);
-  if (sts == -1) 
+  if (sts == -1)
     return NULL;
 
   return Py_BuildValue("i", sts);
@@ -228,7 +230,7 @@ static PyTypeObject PyFliteType = {
   0,                                /*tp_dictoffset */
   (initproc)PyFlite_init,           /*tp_init */
   0,                                /*tp_alloc */
-  PyFlite_new,                      /*tp_new */ 
+  PyFlite_new,                      /*tp_new */
 };
 
 
@@ -248,7 +250,7 @@ static PyObject* pyflite_text_to_wave(PyObject *self, PyObject *args)
 
 
 static PyMethodDef pyflite_funcs[] = {
-  {"flite_text_to_wave", (PyCFunction)pyflite_text_to_wave, METH_VARARGS, 
+  {"flite_text_to_wave", (PyCFunction)pyflite_text_to_wave, METH_VARARGS,
   "This method converts text to wave. I'll probably remove it"},
   {NULL, NULL, 0, NULL},
 };
@@ -276,4 +278,3 @@ PyMODINIT_FUNC init_pyflite(void)
   PyModule_AddObject(m, "error", PyFliteError);
 
 }
-

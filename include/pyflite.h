@@ -1,7 +1,9 @@
-#include<Python.h>
-#include<stdio.h>
-#include<flite.h>
-#include<structmember.h>
+
+
+#include <Python.h>
+#include <stdio.h>
+#include <flite.h>
+#include <structmember.h>
 
 
 cst_voice * register_cmu_us_slt();
@@ -12,8 +14,6 @@ cst_voice * register_cmu_us_rms();
 
 // Function to convert test to wave given voice file
 int text_to_wave(const char *text, const char *wave, const char *voice);
-
-
 
 
 // My Type
